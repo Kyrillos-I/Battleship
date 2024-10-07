@@ -1,2 +1,2 @@
-# webpack-template
-A template repository for webpack projects I create. 
+# Battleship
+The Odin Project's battleship project, meant to help practice test driven development.
