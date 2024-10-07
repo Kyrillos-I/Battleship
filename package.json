@@ -2,12 +2,13 @@
   "devDependencies": {
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4"
   },
-  "name": "webpack-template",
-  "description": "A template repository for webpack projects I create.",
+  "name": "Battleship",
+  "description": "TOP's Battleship project",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
@@ -96,7 +97,8 @@
     "wildcard": "^2.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "watch": "jest --watch"
   },
   "author": "",
   "license": "ISC"
