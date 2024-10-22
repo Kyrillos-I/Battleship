@@ -18,4 +18,4 @@ function Ship(length, hits, sunk) {
   };
 }
 
-module.exports = Ship;
+export default Ship;

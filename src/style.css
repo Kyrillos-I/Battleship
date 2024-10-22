@@ -1,0 +1,93 @@
+@font-face {
+  font-family: KodeMono;
+  src: url(KodeMono-Regular.ttf);
+}
+body {
+  background-color: #00316e;
+  color: white;
+  font-family: KodeMono;
+}
+button {
+  font-family: KodeMono;
+  width: 300px;
+  height: 50px;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+  border: none;
+  font-size: 30px;
+  margin-top: 50px;
+  align-self: center;
+}
+button.down {
+  background-color: black;
+  color: #d9d9d9;
+}
+.allGrid {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.grid * {
+  display: flex;
+}
+
+h1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 70px;
+}
+.left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  align-items: center;
+}
+.alphabet {
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+  position: relative;
+  transform: translateY(-47px);
+  justify-self: flex-start;
+}
+.num {
+  letter-spacing: 12px;
+  position: relative;
+  transform: translateX(18px);
+  margin-top: 1px;
+}
+.right {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  align-items: center;
+}
+.square {
+  width: 36px;
+  height: 36px;
+  border: rgb(255, 255, 255) solid 4px;
+}
+.green {
+  background-color: #2fe14d;
+}
+.click {
+  padding-top: 4px;
+  height: 46px;
+  font-size: 30px;
+  margin-top: 50px;
+  align-self: center;
+}
+.opponent {
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.you {
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+}
