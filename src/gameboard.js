@@ -11,6 +11,7 @@ function Gameboard() {
     I: new Array(10),
     J: new Array(10),
     misses: new Array(),
+    hits: new Array(),
 
     placeShip(ship, array) {
       let hold = array[0];
@@ -36,6 +37,7 @@ function Gameboard() {
       let num = array[1];
       if (this[hold][num] != undefined) {
         this[hold][num].hit();
+        this.hits.push(array);
       } else {
         this.misses.push(array);
       }
